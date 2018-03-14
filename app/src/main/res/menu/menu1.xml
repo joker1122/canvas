@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:title="栗色"/>
+    <item  android:title="金色"/>
+    <item  android:title="绿色"/>
+    <item  android:title="蓝色"/>
+    <item  android:title="猩红色"/>
+    <item  android:title="黑色"/>
+    <item  android:title="银白色"/>
+    <item  android:title="红色"/>
+    <item  android:title="彩色"/>
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="图片" android:id="@+id/open_pic"/>
+    <item android:title="保存图片" android:id="@+id/save"/>
+    <item android:title="打开背景音乐" android:id="@+id/stop"/>
+    <item android:title="背景颜色" android:id="@+id/bgc">
+        <menu>
+          <group android:id="@+id/change">
+              <item android:title="蓝" android:id="@+id/blue"/>
+              <item android:title="绿" android:id="@+id/green"/>
+              <item android:title="红" android:id="@+id/red"/>
+              <item android:title="白" android:id="@+id/white"/>
+              <item android:title="黑" android:id="@+id/black"/>
+           </group>
+        </menu>
+    </item>
+</menu>

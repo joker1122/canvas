@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="直线"/>
+    <item android:title="圆"/>
+    <item android:title="椭圆"/>
+    <item android:title="矩形"/>
+    <item android:title="无"/>
+</menu>

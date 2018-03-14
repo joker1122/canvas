@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.a18679.canvas"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        config {
+            keyAlias 'Key'
+            keyPassword '199507170921'
+            storeFile file('E:/android studio/key/key.jks')
+            storePassword '199507170921'
+        }
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+        demo {
+            applicationId "com.example.a18679.demo"
+            versionName "demo-2.0"
+            signingConfig signingConfigs.config
+            targetSdkVersion 14
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}
